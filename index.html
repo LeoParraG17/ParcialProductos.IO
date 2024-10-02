@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo_pagina">Reseñas de Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #f40009; 
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .nav-link:hover {
+            color: #ffe600 !important; 
+        }
+        h2, h3 {
+            color: #f40009; 
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #f40009;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Leonardo Parra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos-section">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reseñas-section">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="productos-section" class="mt-5 pt-5">
+        <div class="container">
+            <h2 class="text-center">Nuestros Productos</h2>
+            <div id="productos" class="row g-4"></div>
+        </div>
+    </section>
+
+    
+    <section id="reseñas-section" class="mt-4">
+        <div class="container">
+            <h2 class="text-center">Reseñas Destacadas</h2>
+            <div id="reseñas" class="row g-4"></div>
+        </div>
+    </section>
+
+    
+    <section id="contact-section">
+        <div class="container">
+            <h3 class="text-center">Contáctanos</h3>
+            <footer id="datos_tienda" class="py-3"></footer>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container">
+            <h3 class="text-center">Horario de Atención</h3>
+            <footer id="horario_atencion" class="text-center"></footer>
+        </div>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
